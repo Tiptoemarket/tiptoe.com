@@ -1,0 +1,430 @@
+<!-- sections/section-1-home/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Tiptoe.com - The Smart Way to Recover</title>
+    <meta name="description" content="Turn shopping regrets into rewards. Buy and sell unwanted, discounted, or damaged items with confidence. Social e-commerce marketplace for smart shoppers.">
+    <meta name="keywords" content="tiptoe, marketplace, discounted items, shopping regrets, resell, auctions, damaged goods, secondhand, community">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tiptoe.com/">
+    <meta property="og:title" content="Tiptoe.com - The Smart Way to Recover">
+    <meta property="og:description" content="Turn shopping regrets into rewards. Buy and sell unwanted items with confidence.">
+    <meta property="og:image" content="./assets/images/hero/tiptoe-og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tiptoe.com/">
+    <meta property="twitter:title" content="Tiptoe.com - The Smart Way to Recover">
+    <meta property="twitter:description" content="Turn shopping regrets into rewards. Buy and sell unwanted items with confidence.">
+    <meta property="twitter:image" content="./assets/images/hero/tiptoe-og-image.jpg">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./sections/section-1-home/home.css" as="style">
+    <link rel="preload" href="./assets/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/images/hero/hero-bg.jpg" as="image">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./sections/section-1-home/home.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Tiptoe.com",
+        "url": "https://tiptoe.com",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://tiptoe.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "description": "Social e-commerce marketplace for turning shopping regrets into rewards",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Tiptoe",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://tiptoe.com/assets/images/logo.png"
+            }
+        }
+    }
+    </script>
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#FF6A00">
+</head>
+<body>
+    <!-- Header Component -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="/">
+                        <span class="logo-icon">👣</span>
+                        <span class="logo-text">TIPTOE.COM</span>
+                    </a>
+                    <p class="logo-tagline">The Smart Way to Recover</p>
+                </div>
+                
+                <!-- Main Navigation -->
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#all-categories" class="nav-link">
+                                <span class="nav-icon">📦</span>
+                                All Categories
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#featured" class="nav-link">
+                                <span class="nav-icon">⭐</span>
+                                Featured Selections
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#protections" class="nav-link">
+                                <span class="nav-icon">🛡️</span>
+                                Order Protections
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <!-- User Actions -->
+                <div class="user-actions">
+                    <button class="btn btn-outline" onclick="location.href='#login'">Sign In</button>
+                    <button class="btn btn-primary" onclick="location.href='#register'">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Component -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    The Smart Way to Recover
+                </h1>
+                <p class="hero-subtitle">
+                    Turn shopping regrets into rewards. Buy and sell unwanted, discounted, or damaged items with confidence.
+                </p>
+                
+                <!-- Search Bar Component -->
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" 
+                               class="search-input" 
+                               placeholder="Search for items, brands, or categories..."
+                               aria-label="Search marketplace">
+                        <select class="search-category">
+                            <option value="all">All Categories</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="fashion">Fashion</option>
+                            <option value="home">Home & Garden</option>
+                            <option value="damaged">Damaged Goods</option>
+                            <option value="auctions">Auctions</option>
+                        </select>
+                        <button class="search-btn" aria-label="Search">
+                            <span class="search-icon">🔍</span>
+                            Search
+                        </button>
+                    </div>
+                    <p class="search-hint">
+                        Try: "discounted iPhone" • "damaged laptop" • "unwanted clothes"
+                    </p>
+                </div>
+                
+                <!-- Hero Stats -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">10,000+</span>
+                        <span class="stat-label">Items Listed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2%</span>
+                        <span class="stat-label">Lowest Fees</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Flash Auctions</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Recovery Promise</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Video Play Button (UI Only) -->
+        <button class="video-play-btn" aria-label="Watch how Tiptoe works">
+            <span class="play-icon">▶</span>
+            See How It Works
+        </button>
+    </section>
+
+    <!-- Navigation Cubes Component -->
+    <section class="nav-cubes">
+        <div class="container">
+            <h2 class="cubes-title">Start Your Recovery Journey</h2>
+            <p class="cubes-subtitle">Choose your path to smarter shopping and selling</p>
+            
+            <div class="cubes-grid">
+                <!-- Cube 1 -->
+                <a href="#buy" class="cube-link">
+                    <div class="cube" data-cube="1">
+                        <div class="cube-icon">🛒</div>
+                        <h3 class="cube-title">Find Amazing Deals</h3>
+                        <p class="cube-desc">
+                            Discover discounted items, flash auctions, and hidden treasures at unbeatable prices.
+                        </p>
+                        <div class="cube-badge">Buyers</div>
+                    </div>
+                </a>
+                
+                <!-- Cube 2 -->
+                <a href="#sell" class="cube-link">
+                    <div class="cube" data-cube="2">
+                        <div class="cube-icon">💰</div>
+                        <h3 class="cube-title">Sell Your Regrets</h3>
+                        <p class="cube-desc">
+                            Turn unwanted purchases into cash. List with original receipt for best results.
+                        </p>
+                        <div class="cube-badge">Sellers</div>
+                    </div>
+                </a>
+                
+                <!-- Cube 3 -->
+                <a href="#earn" class="cube-link">
+                    <div class="cube" data-cube="3">
+                        <div class="cube-icon">🚀</div>
+                        <h3 class="cube-title">Earn Extra Income</h3>
+                        <p class="cube-desc">
+                            Become a promoter or refurbisher. Turn your time and skills into money.
+                        </p>
+                        <div class="cube-badge">Hustlers</div>
+                    </div>
+                </a>
+                
+                <!-- Cube 4 -->
+                <a href="#community" class="cube-link">
+                    <div class="cube" data-cube="4">
+                        <div class="cube-icon">❤️</div>
+                        <h3 class="cube-title">Join Our Community</h3>
+                        <p class="cube-desc">
+                            Donate items, volunteer, or participate in weekly events and treasure hunts.
+                        </p>
+                        <div class="cube-badge">Helpers</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Events Teaser -->
+    <section class="events-teaser">
+        <div class="container">
+            <div class="teaser-content">
+                <div class="teaser-text">
+                    <h2 class="teaser-title">Weekly Tiptoe Thrills</h2>
+                    <p class="teaser-desc">
+                        Never miss out on our exciting weekly events designed to help you recover more value.
+                    </p>
+                    <ul class="event-list">
+                        <li class="event-item">
+                            <span class="event-day">Thursday</span>
+                            <strong>Discount Thursday</strong> - Biggest deals of the week
+                        </li>
+                        <li class="event-item">
+                            <span class="event-day">Friday</span>
+                            <strong>Flash Auction Friday</strong> - 24-hour auctions
+                        </li>
+                        <li class="event-item">
+                            <span class="event-day">Monday</span>
+                            <strong>Free Gift Monday</strong> - Items with bonus gifts
+                        </li>
+                    </ul>
+                </div>
+                <div class="teaser-image">
+                    <div class="event-calendar-placeholder">
+                        📅 Weekly Events Calendar
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Component -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand Column -->
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">👣</span>
+                        <span class="logo-text">TIPTOE.COM</span>
+                    </div>
+                    <p class="footer-tagline">The Smart Way to Recover</p>
+                    <p class="footer-mission">
+                        Turning shopping regrets into rewards since 2024.
+                    </p>
+                </div>
+                
+                <!-- Links Columns -->
+                <div class="footer-links">
+                    <div class="links-column">
+                        <h4 class="links-title">Buy & Sell</h4>
+                        <ul class="links-list">
+                            <li><a href="#how-it-works">How It Works</a></li>
+                            <li><a href="#categories">Browse Categories</a></li>
+                            <li><a href="#auctions">Flash Auctions</a></li>
+                            <li><a href="#damaged-goods">Damaged Goods</a></li>
+                            <li><a href="#regret-relief">Regret Relief</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-column">
+                        <h4 class="links-title">Earn Money</h4>
+                        <ul class="links-list">
+                            <li><a href="#promoter">Become a Promoter</a></li>
+                            <li><a href="#refurbish">Start Refurbishing</a></li>
+                            <li><a href="#pickup-host">Host Pickup Point</a></li>
+                            <li><a href="#commission">Commission Rates</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="links-column">
+                        <h4 class="links-title">Community</h4>
+                        <ul class="links-list">
+                            <li><a href="#donate">Donate Items</a></li>
+                            <li><a href="#volunteer">Volunteer</a></li>
+                            <li><a href="#events">Weekly Events</a></li>
+                            <li><a href="#blog">Success Stories</a></li>
+                            <li><a href="#forum">Community Forum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+                <h4 class="newsletter-title">Get Weekly Deal Alerts</h4>
+                <div class="newsletter-form">
+                    <input type="email" 
+                           class="newsletter-input" 
+                           placeholder="Your email address"
+                           aria-label="Email for newsletter">
+                    <button class="newsletter-btn">Subscribe</button>
+                </div>
+                <p class="newsletter-note">
+                    No spam. Just the best deals every Thursday.
+                </p>
+            </div>
+            
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    © 2024 Tiptoe.com. All rights reserved.
+                </div>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#safety">Safety Center</a>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Root div for future React hydration -->
+    <div id="root"></div>
+
+    <!-- JavaScript -->
+    <script src="./sections/section-1-home/home.js"></script>
+    
+    <!-- 
+    REACT/NEXT.JS CONVERSION NOTES:
+    
+    This HTML will be converted into React components as follows:
+    
+    1. Header Component: <Header />
+      - Props: user (object), isLoggedIn (boolean)
+      - Contains: Logo, Navigation, UserActions
+    
+    2. Hero Component: <Hero />
+      - Props: stats (array), searchQuery (string)
+      - Contains: Title, SearchBar, Stats, VideoButton
+    
+    3. SearchBar Component: <SearchBar />
+      - Props: onSearch (function), categories (array)
+      - State: query (string), selectedCategory (string)
+    
+    4. NavCubes Component: <NavCubes />
+      - Props: cubes (array of cube objects)
+      - Each cube: { id, icon, title, description, badge, link }
+    
+    5. EventsTeaser Component: <EventsTeaser />
+      - Props: events (array), activeEvent (string)
+      - Contains: Event list, Calendar visualization
+    
+    6. Footer Component: <Footer />
+      - Props: links (object), newsletterSubscribe (function)
+      - Contains: Brand, Links, Newsletter, Legal
+    
+    The main structure becomes:
+      <Layout>
+        <Header />
+        <Hero />
+        <NavCubes />
+        <EventsTeaser />
+        <Footer />
+      </Layout>
+    
+    WordPress Theme Mapping:
+    
+    This section maps to WordPress theme files as follows:
+    
+    1. Header section -> header.php
+      - Logo, navigation, user actions
+    
+    2. Hero section -> front-page.php (or template-parts/hero.php)
+      - Hero background, search, stats
+    
+    3. Nav Cubes -> template-parts/nav-cubes.php
+      - Dynamic content from WordPress customizer
+    
+    4. Events Teaser -> template-parts/events-teaser.php
+      - Connected to Events Calendar plugin
+    
+    5. Footer -> footer.php
+      - Footer content, newsletter form
+    
+    Dynamic WooCommerce Integration:
+    
+    1. Search Bar -> WooCommerce Product Search widget
+    2. Nav Cubes -> WooCommerce product categories
+    3. Stats -> WooCommerce reports via shortcode
+    4. Newsletter -> MailPoet/Newsletter plugin
+    
+    Elementor/Gutenberg Blocks:
+    
+    Each section can be made into reusable blocks:
+      - Hero Block with background, title, search
+      - Stats Block with 4 stat items
+      - Nav Cubes Block with 4 cubes
+      - Events Block with calendar
+      - Footer Block with columns
+    -->
+</body>
+</html>
